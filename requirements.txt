@@ -1,0 +1,14 @@
+tensorflow-cpu==2.19.0
+scipy==1.16.1
+absl-py==1.4.0
+keras==3.11.1
+scikit-learn==1.7.1
+scikit-image==0.25.2
+Pillow==11.3.0
+pandas==2.3.1
+tqdm==4.67.1
+opencv-python==4.10.0.82
+wandb==0.21.0
+matplotlib==3.10.5
+seaborn==0.13.2
+jax_privacy @ git+https://github.com/google-deepmind/jax_privacy@main

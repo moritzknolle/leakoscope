@@ -1,0 +1,11 @@
+*.pyc
+*.swp
+logs
+wandb
+tmp
+data
+figs
+test/tmp_test
+slurm_out
+.myypy_cache
+*.tex
