@@ -9,7 +9,7 @@ Code to reproduce results from our paper **"Disparate privacy risks from medical
 This codebase requires a functional [jax](https://docs.jax.dev) installation with GPU support as prerequisite. Up-to-date installation instructions can be found [here](https://docs.jax.dev/en/latest/installation.html#conda-installation).
 
 ```bash
-    conda create -n leakoscope python=3.9.18
+    conda create -n leakoscope python=3.12.0
     conda activate leakoscope
     # install jax now by following the instructions at https://docs.jax.dev/en/latest/installation.html
     git clone https://github.com/moritzknolle/leakoscope.git
@@ -17,6 +17,7 @@ This codebase requires a functional [jax](https://docs.jax.dev) installation wit
     pip install -r requirements.txt
     mkdir figs
     mkdir logs
+    mkdir data/csv
 ```
     
 ## Datasets
@@ -76,7 +77,7 @@ All dataset entry scripts support the following key arguments:
 |----------------|-------------|---------|
 | `--n_runs` | Number of models to train | `--n_runs=200` |
 | `--full_dataset` | Train on full dataset (True) or random subset for privacy auditing (False) | `--full_dataset=False` |
-| `--logdir` | Directory to save training logs and models  | `--logdir="./logs/mylogdir"` |
+| `--logdir` | Directory to save raw model predictions and subset mask to (only when`--full_dataset=False`)  | `--logdir="./logs/mylogdir"` |
 | `--model` | Model architecture to use | `--model=vit_b_16` |
 | `--epochs` | Number of training epochs| `--epochs=200` |
 | `--batch_size` | Training batch size  | `--batch_size=512` |
