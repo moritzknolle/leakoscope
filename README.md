@@ -125,8 +125,8 @@ Requires an additional [PyTorch](https://pytorch.org/) and [TorchXrayVision](htt
 ```bash
 conda activate torch # activate your environment with Pytorch and TorchXrayVision installed
 python xrv_scores.py # model inference
-conda activate med-leak
-python xrv_attack.py # conduct attacks
+conda activate leakoscope
+python xrv_attack.py # conduct attacks and plot results
 ```
 
 ## Reproducing all results
